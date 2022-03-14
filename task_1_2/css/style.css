@@ -1,0 +1,131 @@
+@import "reset.css";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0 15px;
+}
+
+@media (min-width: 1200px) {
+	body {
+		background-color: gray;
+	}
+}
+
+.page-wrap {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 576px;
+	margin: 20px auto;
+}
+
+@media (min-width: 576px) {
+	.container {
+		max-width: 768px;
+	}
+}
+@media (min-width: 768px) {
+	.container {
+		max-width: 992px;
+	}
+}
+@media (min-width: 992px) {
+	.container {
+		max-width: 1200px;
+	}
+}
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1400px;
+	}
+}
+
+.text {
+	margin-bottom: 25px;
+}
+
+.main-story {
+	position: relative;
+	margin: 0 0 25px 0;
+}
+
+.main-story__img img {
+	width: 100%;
+}
+
+img {
+	display: block;
+}
+
+a {
+	color: lightblue;
+}
+
+.story-intro {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.75);
+	padding: 20px;
+	color: white;
+}
+
+h1 {
+	font-size: 4em;
+}
+h1,
+h2 {
+	margin: 0 0 10px 0;
+}
+
+.story-intro h1 {
+	font-size: 2.5em;
+}
+.story-intro p {
+	margin: 0;
+}
+
+.sub-stories {
+	overflow: hidden;
+	margin: 0 0 25px 0;
+}
+
+.flex__row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 -15px;
+}
+
+.flex__col {
+	padding: 0 15px;
+	flex: 0 1 100%;
+}
+.sub-story {
+	margin-bottom: 30px;
+	position: relative;
+	font-size: 80%;
+}
+
+@media (min-width: 768px) {
+	.flex__col {
+		flex: 0 1 50%;
+	}
+}
+
+@media (min-width: 992px) {
+	.flex__col {
+		flex: 0 1 33.333%;
+	}
+}
+
+.sub-story img {
+	width: 100%;
+}
+
