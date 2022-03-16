@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html',{ "title":"Contacts" })
+  <body>
+    <div class="wrapper">
+      @@include('html/header.html',{})
+      <main class="page">
+        <div class="navigation">
+          <div class="container">
+            <div class="navigation__row">
+              <a
+                class="navigation__link navigation__link_home"
+                href="index.html"
+                >Home page</a
+              >
+              <a
+                class="navigation__link navigation__link_about"
+                href="aboutus.html"
+                >About us</a
+              >
+              <a
+                class="navigation__link navigation__link_contacts"
+                href="contacts.html"
+                >Contacts</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="contacts">
+          <div class="container">
+            <div class="contacts__row">
+              <div class="contacts__title">Contacts</div>
+              <div class="contacts__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                excepturi distinctio reiciendis, dolorem voluptatibus harum
+                quaerat, aliquam quae temporibus corrupti nostrum quod, cumque
+                tempora? Iusto odit totam nesciunt eum accusantium?
+              </div>
+              <div class="contacts__text">
+                <textarea
+                  name="text"
+                  rows="10"
+                  cols="80"
+                  class="contacts__textarea"
+                ></textarea>
+              </div>
+              <div class="contacts__button">
+                <input class="contacts__btn" type="button" value="Send" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aside"><div class="container">ASIDE</div></div>
+      </main>
+      @@include('html/footer.html',{})
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
