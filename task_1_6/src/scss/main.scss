@@ -1,0 +1,203 @@
+//---------------------------VARIABLES------------------------------------
+
+$font-family-body: "Roboto";
+$font-size-body: 28px;
+$font-weight-body: 400;
+$color-body: rgba(148, 147, 147, 0.856);
+$color-success: rgba(6, 153, 6, 0.829);
+
+//---------------------------GENERAL------------------------------------
+
+body {
+  font-family: $font-family-body;
+  font-size: $font-size-body;
+  font-weight: $font-weight-body;
+  color: $color-body;
+  padding: 200px 15px 0px;
+}
+.container {
+  max-width: 567px;
+  margin: 0 auto;
+}
+@media (min-width: 567px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+//---------------------------TO-DO-LIST------------------------------------
+
+.todo-list {
+  border-radius: 10px;
+  border: 1px solid grey;
+  overflow: hidden;
+
+  &__row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 35px;
+    font-weight: 700;
+    background-color: rgb(187, 184, 184);
+    color: rgba(0, 0, 0, 0.63);
+    padding: 10px;
+    border-bottom: 1px solid grey;
+  }
+
+  &__list {
+    padding: 10px;
+    li {
+      display: flex;
+      flex-flow: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      border-bottom: 1px solid grey;
+    }
+    & li:last-child {
+      border: none;
+    }
+    input {
+      position: absolute;
+      visibility: hidden;
+    }
+  }
+
+  &__text {
+    flex: 0 1 90%;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  &__label {
+    flex-shrink: 0;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: 2px solid grey;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &__label::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 3px;
+    background-color: grey;
+    transform: rotate(-45deg);
+    top: 12px;
+    left: 7px;
+  }
+
+  &__label::after {
+    top: 10.5px;
+    left: 6px;
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 10px;
+    background-color: grey;
+    transform: rotate(-45deg);
+  }
+}
+
+//---------------------------CHECKED------------------------------------
+
+#r1:checked ~ .todo-list__label {
+  border: 2px solid $color-success;
+}
+#r1:checked ~ .todo-list__label::after {
+  background-color: $color-success;
+}
+#r1:checked ~ .todo-list__label::before {
+  background-color: $color-success;
+}
+#r1:checked ~ .todo-list__text {
+  color: $color-success;
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+#r2:checked ~ .todo-list__label {
+  border: 2px solid $color-success;
+}
+#r2:checked ~ .todo-list__label::after {
+  background-color: $color-success;
+}
+#r2:checked ~ .todo-list__label::before {
+  background-color: $color-success;
+}
+#r2:checked ~ .todo-list__text {
+  color: $color-success;
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+#r3:checked ~ .todo-list__label {
+  border: 2px solid $color-success;
+}
+#r3:checked ~ .todo-list__label::after {
+  background-color: $color-success;
+}
+#r3:checked ~ .todo-list__label::before {
+  background-color: $color-success;
+}
+#r3:checked ~ .todo-list__text {
+  color: $color-success;
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+#r4:checked ~ .todo-list__label {
+  border: 2px solid $color-success;
+}
+#r4:checked ~ .todo-list__label::after {
+  background-color: $color-success;
+}
+#r4:checked ~ .todo-list__label::before {
+  background-color: $color-success;
+}
+#r4:checked ~ .todo-list__text {
+  color: $color-success;
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+#r5:checked ~ .todo-list__label {
+  border: 2px solid $color-success;
+}
+#r5:checked ~ .todo-list__label::after {
+  background-color: $color-success;
+}
+#r5:checked ~ .todo-list__label::before {
+  background-color: $color-success;
+}
+#r5:checked ~ .todo-list__text {
+  color: $color-success;
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+#r6:checked ~ .todo-list__label {
+  border: 2px solid $color-success;
+}
+#r6:checked ~ .todo-list__label::after {
+  background-color: $color-success;
+}
+#r6:checked ~ .todo-list__label::before {
+  background-color: $color-success;
+}
+#r6:checked ~ .todo-list__text {
+  color: $color-success;
+  text-decoration: line-through;
+  font-style: italic;
+}
